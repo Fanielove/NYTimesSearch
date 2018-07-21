@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".activities.SearchActivity"
+    android:background="@drawable/se"
+    tools:showIn="@layout/activity_search">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:labelFor="@id/etQuery"
+        android:text="@string/ny"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:visibility="visible" />
+
+
+    <EditText
+        android:id="@+id/etQuery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="74dp"
+        android:ems="10"
+        android:hint="@string/hint"
+        android:inputType="textPersonName" />
+
+
+    <Button
+        android:id="@+id/btButton"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etQuery"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:background="@drawable/button_background"
+        android:onClick="onArticleSearch"
+        android:text="@string/search"
+        android:textColor="#f2efef"
+        android:textSize="25sp" />
+
+    <GridView
+        android:id="@+id/gvResults"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/etQuery"
+        android:layout_centerHorizontal="true"
+        android:numColumns="4"
+        tools:ignore="UnknownId" />
+
+</RelativeLayout>

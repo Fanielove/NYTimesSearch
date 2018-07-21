@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <item name="search_edit_frame" type="id" />
+
+
+    <string name="hint">Enter Search query</string>
+    <string name="search">Search</string>
+    <string name="ny">NYTimesSearch</string>
+    <string name="NYtimesSearch">NYtimesSearch</string>
+    <string name="title_activity_article">ArticleActivity</string>
+</resources>
