@@ -1,4 +1,4 @@
 package com.codepath.nytimessearch;
 
-class R {
+public class MyDatePickerFragment {
 }
